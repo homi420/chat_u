@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+.register {
+  @apply sm:w-1/2;
+}
+.myForm {
+  @apply flex flex-col gap-4;
+}
+.formGroup {
+  @apply flex flex-col gap-4;
+}
+input {
+  @apply w-full px-4 py-2  text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 text-black;
+}
+
+.btn1 {
+  @apply rounded border hover:bg-orange-100 hover:text-slate-600 hover:shadow hover:shadow-orange-300 transition-all bg-slate-600 text-white py-1 px-2 shadow shadow-slate-800 my-4;
+}
+.chatBox {
+  height: 95%;
+  @apply overflow-scroll;
+}
+.myMessageParent {
+  @apply w-full   flex items-center justify-end my-2;
+}
+.myMessage {
+  @apply p-2 bg-blue-300 rounded text-black w-fit flex flex-col gap-1;
+}
+.othersMessageParent {
+  @apply w-full  my-2;
+}
+.othersMessage {
+  @apply p-2  rounded text-black w-fit bg-slate-300 flex flex-col gap-1;
+}
